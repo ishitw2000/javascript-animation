@@ -1,0 +1,1 @@
+A project to display animations using javascript.
