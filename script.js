@@ -1,10 +1,5 @@
 var c = document.querySelector('.canvas');
 var r = document.querySelector(".rocket");
-var k = true;
-var t = 1;
-var pos = 100 + "px";
-
-r.style.transform = "translate(" + pos + ")";
 
 
 function move() {
@@ -25,20 +20,23 @@ function moveUp() {
 function animateStars(k) {
     let j = 1;
     let v = 10;
-    setInterval(() => {
+    const r = setInterval(() => {
         k.style.transform = "translateY(" + j + "px)";
         j += v;
-    }, 100);
+        if (j > window.innerHeight) {
+            clearInterval(r);
+        }
+    }, 50);
 }
 
 function stars() {
-    var n = 15;
+    var n = 25;
     for (let i = 1; i <= n; i++) {
         let z = document.createElement('i');
         z.style.position = "absolute";
         z.style.top = Math.random() * window.innerHeight + "px";
         z.style.left = Math.random() * window.innerWidth + "px";
-        z.style.height = 4 + "px";
+        z.style.height = 3 + "px";
         z.style.width = 1 + "px";
         z.style.backgroundColor = "white";
         z.style.transform = "translateY(-10px)";
