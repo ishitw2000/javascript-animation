@@ -1,23 +1,27 @@
+html,
 body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
 }
 
 .canvas {
+    position: relative;
     display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
     justify-content: center;
     align-items: center;
 }
 
 .rocket {
-    position: absolute;
-    top: 60%;
+    position: relative;
 }
 
-.rocket img {
+#rocket-img {
+    display: inline-block;
     height: 130px;
 }
 
@@ -27,7 +31,7 @@ body {
     width: 8px;
     background-color: #f5d020;
     background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-    filter: blur(1.2px);
+    filter: blur(px);
 }
 
 .fire {
