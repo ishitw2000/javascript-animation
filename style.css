@@ -24,7 +24,7 @@ body {
 #rocket-img {
     display: inline-block;
     height: 130px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .booster {

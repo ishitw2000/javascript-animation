@@ -32,7 +32,7 @@ function animateStars(k) {
 }
 
 function stars() {
-    var n = 50;
+    var n = 15;
     for (let i = 1; i <= n; i++) {
         let z = document.createElement('i');
         z.style.position = "absolute";
@@ -46,5 +46,6 @@ function stars() {
         c.appendChild(z);
     }
 }
-setInterval(stars, 2000);
+
+setInterval(stars, window.innerHeight);
 setTimeout(move, 1000);
