@@ -1,13 +1,41 @@
-* {
+body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
-#canvas {
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rocket {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: slateblue;
+    top: 60%;
+}
+
+.rocket img {
+    height: 130px;
+}
+
+.booster {
+    position: absolute;
+    height: 40px;
+    width: 8px;
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    filter: blur(1.2px);
+}
+
+.fire {
+    top: 90%;
+    right: 51%;
+}
+
+.fire2 {
+    top: 90%;
+    right: 42%;
 }
